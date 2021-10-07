@@ -1,0 +1,49 @@
+/* რესფონსივის სტილები */
+
+/* ტაბლეტის რეზოლუცია */
+@media (max-width: 1024px) {
+  .first {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .item {
+    background-color: rebeccapurple;
+  }
+}
+/* პატარა ტაბლეტის რეზოლუცია */
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .item {
+    background-color: palegreen;
+  }
+  .wrapper {
+    justify-content: center;
+  }
+  .wrapper p {
+    text-align: center;
+  }
+  .articles {
+    background-color: thistle;
+  }
+}
+/* მობილურის რეზოლუცია */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+  .item {
+    background-color: yellow;
+  }
+  .wrapper img {
+    max-width: 100%;
+  }
+  .wrapper p {
+    color: tomato;
+    margin: 20px 0;
+  }
+}
